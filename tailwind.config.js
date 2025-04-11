@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   important: true,
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{html,js,jsx,ts,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
@@ -13,6 +16,9 @@ export default {
         'home-heading-small' : ['28px', '34px'],
         'home-heading-large' : ['48px','56px'],
         'default' : ['15px', '25px']
+      },
+      gridTemplateColumns:{
+        'auto' : 'repeat(auto-fit, minmax(200px, 1fr))',
       }
     },
   },
