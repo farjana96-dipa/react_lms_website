@@ -20,7 +20,7 @@ const courseSection = () => {
       <p className='mb-10'>Discover our top-rated courses across various categories. From coding and design to business<br/> and wellness, our courses are crafted to deliver results.</p>
 
   
-      <div className='max-w-screen-lg mx-auto'>
+      <div className='max-w-screen-xl mx-auto'>
         <div className='grid [grid-template-columns:repeat(auto-fit,minmax(150px,1fr))] gap-4 px-4 md:px-0 my-10 md:my-16 '>
           {allCourses.slice(0,4).map((course,index)=> <CourseCard key={index} course={course} />)}
         </div>

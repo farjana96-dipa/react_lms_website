@@ -3,12 +3,14 @@ import { assets, dummyTestimonial } from '../../assets/assets.js'
 
 const Testimonials = () => {
   return (
-    <div className='pt-10'>
+    <div className='pt-10 w-full'>
      <h2 className='text-4xl my-5 font-bold text-gray-800 mt-10'>Testimonials</h2>
-     <p className='mb-10'>Hear from our learners as they share their journeys of transformation, success, and how our
+     <p className='mb-10'>Hear from our learners as they share their journeys of transformation, success,<br/> and how our
      platform has made a difference in their lives.</p>
 
-      <div className='grid [grid-template-columns:repeat(auto-fit,minmax(150px,1fr))] gap-4 px-4 md:px-0 my-5 md:my-16 '>
+
+    <div className='max-w-screen-xl mx-auto '>
+      <div className='grid [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))] gap-4 px-4 md:px-0 my-5 md:my-16 '>
         {dummyTestimonial.map((item,index)=>(
           <div key={index} className='text-sm text-left border border-gray-500/30 pb-6 rounded-lg bg-white shadow-md mb-5'>
             <div className='flex items-center gap-4 px-5 py-4 bg-gray-500/10'>
@@ -32,6 +34,7 @@ const Testimonials = () => {
 
           </div>
         ))}
+      </div>
       </div>
 
     </div>

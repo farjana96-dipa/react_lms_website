@@ -123,6 +123,13 @@ export const dummyTestimonial = [
         rating: 4.5,
         feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
     },
+    {
+        name: 'John Doe',
+        role: 'SWE 2 @ Meta',
+        image: assets.profile_img_1,
+        rating: 4.8,
+        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+    },
 ];
 
 export const dummyDashboardData = {
