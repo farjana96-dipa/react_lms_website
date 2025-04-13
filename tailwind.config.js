@@ -3,7 +3,7 @@ export default {
   important: true,
   content: [
     "./index.html",
-    "./src/**/*.{html,js,jsx,ts,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -19,7 +19,10 @@ export default {
       },
       gridTemplateColumns:{
         'auto' : 'repeat(auto-fit, minmax(200px, 1fr))',
-      }
+      },
+      safelist: [
+        'h-section-height',
+      ]
     },
   },
   plugins: [],

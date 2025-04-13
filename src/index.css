@@ -8,3 +8,8 @@
   font-family: "Outfit", sans-serif;
 }
 
+
+
+::-webkit-scrollbar{
+  display: none;
+}
